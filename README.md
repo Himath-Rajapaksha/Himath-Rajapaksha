@@ -1,12 +1,8 @@
-<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/header.svg" width="100%" alt="Sleek Hero">
+<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/header.svg" width="100%" alt="Terminal">
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/about.svg" width="100%" alt="Sleek About">
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/skills.svg" width="100%" alt="Sleek Stack">
+<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/skills.svg" width="100%" alt="Stack">
 
 <br/>
 
@@ -46,4 +42,4 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/footer.svg" width="100%" alt="Sleek Wave">
+<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/footer.svg" width="100%" alt="Footer">
