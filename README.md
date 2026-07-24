@@ -34,8 +34,4 @@
 
 <br/>
 
-<img src="https://ryme.md/api/render/sleek-github-stats?u=Himath-Rajapaksha&bg=0d0d10&fg=f7f7fb&accent=dc2626&muted=a5a5b3" width="100%" alt="Sleek GitHub">
-
-<br/>
-
 <img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/footer.svg" width="100%" alt="Footer">
