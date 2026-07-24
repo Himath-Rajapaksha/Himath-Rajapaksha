@@ -1,54 +1,163 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="240" viewBox="0 0 800 240">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="380" viewBox="0 0 800 380">
   <style>
-    @keyframes type { from { width: 0; } to { width: 100%; } }
-    @keyframes fade { 0% { opacity: 0; transform: translateX(-8px); } 100% { opacity: 1; transform: translateX(0); } }
-    .tag { animation: fade 0.5s ease-out both; }
-    .t1 { animation-delay: 0.1s; } .t2 { animation-delay: 0.2s; } .t3 { animation-delay: 0.3s; }
-    .t4 { animation-delay: 0.4s; } .t5 { animation-delay: 0.5s; } .t6 { animation-delay: 0.6s; }
-    .t7 { animation-delay: 0.7s; } .t8 { animation-delay: 0.8s; }
+    @keyframes fade { 0% { opacity: 0; transform: translateY(4px); } 100% { opacity: 1; transform: translateY(0); } }
+    .row { animation: fade 0.4s ease-out both; }
+    .r1 { animation-delay: 0.1s; } .r2 { animation-delay: 0.15s; } .r3 { animation-delay: 0.2s; }
+    .r4 { animation-delay: 0.25s; } .r5 { animation-delay: 0.3s; } .r6 { animation-delay: 0.35s; }
+    .r7 { animation-delay: 0.4s; } .r8 { animation-delay: 0.45s; } .r9 { animation-delay: 0.5s; }
+    .r10 { animation-delay: 0.55s; } .r11 { animation-delay: 0.6s; } .r12 { animation-delay: 0.65s; }
+    .r13 { animation-delay: 0.7s; } .r14 { animation-delay: 0.75s; } .r15 { animation-delay: 0.8s; }
+    .cursor { animation: blink 1s step-end infinite; }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
   </style>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#0d0d10"/>
-      <stop offset="100%" stop-color="#0d0d10" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0d0d10" stop-opacity="0.92"/>
     </linearGradient>
   </defs>
   <rect width="100%" height="100%" fill="url(#bg)" rx="14" ry="14"/>
-  <!-- Header -->
-  <text x="56" y="40" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="13" opacity="0.5">$ cat stack.json</text>
-  <line x1="56" y1="52" x2="260" y2="52" stroke="#dc2626" stroke-width="1" opacity="0.4"/>
-  <!-- Languages -->
-  <text x="56" y="80" fill="#dc2626" font-family="ui-monospace, monospace" font-size="11" font-weight="bold">"languages"</text>
-  <g>
-    <rect x="56" y="92" width="80" height="28" rx="6" fill="#3178C6" opacity="0.15" stroke="#3178C6" stroke-width="1" class="tag t1"/>
-    <text x="96" y="110" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t1">TypeScript</text>
-    <rect x="148" y="92" width="80" height="28" rx="6" fill="#F7DF1E" opacity="0.15" stroke="#F7DF1E" stroke-width="1" class="tag t2"/>
-    <text x="188" y="110" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t2">JavaScript</text>
-    <rect x="240" y="92" width="68" height="28" rx="6" fill="#3776AB" opacity="0.15" stroke="#3776AB" stroke-width="1" class="tag t3"/>
-    <text x="274" y="110" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t3">Python</text>
-    <rect x="320" y="92" width="56" height="28" rx="6" fill="#CE422B" opacity="0.15" stroke="#CE422B" stroke-width="1" class="tag t4"/>
-    <text x="348" y="110" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t4">Rust</text>
-  </g>
-  <!-- Frameworks -->
-  <text x="56" y="148" fill="#dc2626" font-family="ui-monospace, monospace" font-size="11" font-weight="bold">"frameworks"</text>
-  <g>
-    <rect x="56" y="160" width="68" height="28" rx="6" fill="#f7f7fb" opacity="0.08" stroke="#f7f7fb" stroke-width="1" class="tag t5"/>
-    <text x="90" y="178" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t5">Next.js</text>
-    <rect x="136" y="160" width="60" height="28" rx="6" fill="#FFC131" opacity="0.15" stroke="#FFC131" stroke-width="1" class="tag t6"/>
-    <text x="166" y="178" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t6">Tauri</text>
-    <rect x="208" y="160" width="76" height="28" rx="6" fill="#3ECF8E" opacity="0.15" stroke="#3ECF8E" stroke-width="1" class="tag t7"/>
-    <text x="246" y="178" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t7">Supabase</text>
-    <rect x="296" y="160" width="72" height="28" rx="6" fill="#4A86CF" opacity="0.15" stroke="#4A86CF" stroke-width="1" class="tag t8"/>
-    <text x="332" y="178" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" class="tag t8">GNOME</text>
-  </g>
-  <!-- Right side: terminal aesthetic -->
-  <g transform="translate(520, 60)" opacity="0.6">
-    <text x="0" y="0" fill="#6b7280" font-family="ui-monospace, monospace" font-size="10">{</text>
-    <text x="16" y="18" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10">"focus": [</text>
-    <text x="32" y="36" fill="#dc2626" font-family="ui-monospace, monospace" font-size="10">"security",</text>
-    <text x="32" y="54" fill="#3ECF8E" font-family="ui-monospace, monospace" font-size="10">"systems",</text>
-    <text x="32" y="72" fill="#4A86CF" font-family="ui-monospace, monospace" font-size="10">"opensource"</text>
-    <text x="16" y="90" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="10">]</text>
-    <text x="0" y="108" fill="#6b7280" font-family="ui-monospace, monospace" font-size="10">}</text>
-  </g>
+
+  <!-- Command prompt -->
+  <text x="40" y="32" fill="#6b7280" font-family="ui-monospace, monospace" font-size="12">
+    <tspan fill="#dc2626">$</tspan> <tspan fill="#a5a5b3">lsd -la stack/</tspan>
+  </text>
+  <line x1="40" y1="42" x2="260" y2="42" stroke="#dc2626" stroke-width="1" opacity="0.3"/>
+
+  <!-- Column headers -->
+  <text x="40" y="68" fill="#6b7280" font-family="ui-monospace, monospace" font-size="11" class="row r1">Permissions  Links  Owner      Size  Date         Name</text>
+  <line x1="40" y1="76" x2="760" y2="76" stroke="#1e1e2e" stroke-width="1" class="row r1"/>
+
+  <!-- . directory -->
+  <text x="40" y="96" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r2">
+    <tspan fill="#4A86CF">drwxr-xr-x</tspan>
+    <tspan dx="12"> 3</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">4096</tspan>
+    <tspan dx="12">Jul 24 23:00</tspan>
+    <tspan dx="12" fill="#4A86CF" font-weight="bold">.</tspan>
+  </text>
+
+  <!-- .. directory -->
+  <text x="40" y="114" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r3">
+    <tspan fill="#4A86CF">drwxr-xr-x</tspan>
+    <tspan dx="12"> 8</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">4096</tspan>
+    <tspan dx="12">Jul 24 23:00</tspan>
+    <tspan dx="12" fill="#4A86CF" font-weight="bold">..</tspan>
+  </text>
+
+  <!-- languages/ directory -->
+  <text x="40" y="132" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r4">
+    <tspan fill="#4A86CF">drwxr-xr-x</tspan>
+    <tspan dx="12"> 5</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">4096</tspan>
+    <tspan dx="12">Jul 24 22:00</tspan>
+    <tspan dx="12" fill="#4A86CF" font-weight="bold">languages/</tspan>
+  </text>
+
+  <!-- frameworks/ directory -->
+  <text x="40" y="150" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r5">
+    <tspan fill="#4A86CF">drwxr-xr-x</tspan>
+    <tspan dx="12"> 5</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">4096</tspan>
+    <tspan dx="12">Jul 24 22:00</tspan>
+    <tspan dx="12" fill="#4A86CF" font-weight="bold">frameworks/</tspan>
+  </text>
+
+  <!-- tools/ directory -->
+  <text x="40" y="168" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r6">
+    <tspan fill="#4A86CF">drwxr-xr-x</tspan>
+    <tspan dx="12"> 6</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">4096</tspan>
+    <tspan dx="12">Jul 24 22:00</tspan>
+    <tspan dx="12" fill="#4A86CF" font-weight="bold">tools/</tspan>
+  </text>
+
+  <line x1="40" y1="180" x2="760" y2="180" stroke="#1e1e2e" stroke-width="1" class="row r6"/>
+
+  <!-- languages/ contents -->
+  <text x="40" y="200" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r7">
+    <tspan fill="#3178C6">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">2.1k</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#3178C6">typescript.ts</tspan>
+  </text>
+
+  <text x="40" y="218" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r8">
+    <tspan fill="#F7DF1E">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">1.8k</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#F7DF1E">javascript.js</tspan>
+  </text>
+
+  <text x="40" y="236" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r9">
+    <tspan fill="#3776AB">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">1.5k</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#3776AB">python.py</tspan>
+  </text>
+
+  <text x="40" y="254" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r10">
+    <tspan fill="#CE422B">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16"> 982</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#CE422B">rust.rs</tspan>
+  </text>
+
+  <line x1="40" y1="266" x2="760" y2="266" stroke="#1e1e2e" stroke-width="1" class="row r10"/>
+
+  <!-- frameworks/ contents -->
+  <text x="40" y="284" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r11">
+    <tspan fill="#f7f7fb">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16">1.2k</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#f7f7fb">next.js</tspan>
+  </text>
+
+  <text x="40" y="302" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r12">
+    <tspan fill="#FFC131">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16"> 890</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#FFC131">tauri</tspan>
+  </text>
+
+  <text x="40" y="320" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r13">
+    <tspan fill="#3ECF8E">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16"> 756</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#3ECF8E">supabase</tspan>
+  </text>
+
+  <text x="40" y="338" fill="#a5a5b3" font-family="ui-monospace, monospace" font-size="11" class="row r14">
+    <tspan fill="#4A86CF">-rw-r--r--</tspan>
+    <tspan dx="12"> 1</tspan>
+    <tspan dx="16">himath</tspan>
+    <tspan dx="16"> 624</tspan>
+    <tspan dx="16">Jul 24 21:00</tspan>
+    <tspan dx="12" fill="#4A86CF">gnome.js</tspan>
+  </text>
+
+  <!-- Prompt -->
+  <text x="40" y="364" fill="#6b7280" font-family="ui-monospace, monospace" font-size="11" class="row r15">
+    <tspan fill="#dc2626">$</tspan> <tspan fill="#a5a5b3">_</tspan><tspan class="cursor" fill="#f7f7fb">|</tspan>
+  </text>
 </svg>
