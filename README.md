@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://github.com/Himath-Rajapaksha/AFO/blob/master/AFO-icon-3.0.0.png?raw=true" width="100" alt="AFO Logo" />
+<a href="https://github.com/Himath-Rajapaksha/AFO">
+  <img src="https://github.com/Himath-Rajapaksha/AFO/blob/master/AFO-icon-3.0.0.png?raw=true" width="100" alt="AFO Logo" />
+</a>
 
 # Hi, I'm Himath Rajapaksha
 
