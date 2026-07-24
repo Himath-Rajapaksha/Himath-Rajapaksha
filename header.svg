@@ -1,22 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="280" viewBox="0 0 800 280">
   <style>
-    .line { animation: draw 2s ease-out forwards; stroke-dasharray: 400; stroke-dashoffset: 400; }
-    .glow { animation: pulse 3s ease-in-out infinite; }
-    @keyframes draw { to { stroke-dashoffset: 0; } }
-    @keyframes pulse { 0%, 100% { opacity: 0.4; } 50% { opacity: 1; } }
+    @keyframes flicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+    @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+    @keyframes slide { 0% { transform: translateY(8px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+    @keyframes glow { 0%, 100% { filter: drop-shadow(0 0 3px #dc2626); } 50% { filter: drop-shadow(0 0 8px #dc2626); } }
+    .cursor { animation: blink 1s step-end infinite; }
+    .line1 { animation: slide 0.6s ease-out 0.3s both; }
+    .line2 { animation: slide 0.6s ease-out 0.6s both; }
+    .line3 { animation: slide 0.6s ease-out 0.9s both; }
+    .line4 { animation: slide 0.6s ease-out 1.2s both; }
+    .dot { animation: glow 2s ease-in-out infinite; }
   </style>
   <defs>
-    <linearGradient id="bg-grad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0d0d10"/>
-      <stop offset="100%" stop-color="#1a1a2e"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#12121a"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#dc2626"/>
-      <stop offset="100%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444"/>
     </linearGradient>
   </defs>
-  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="14" ry="14"/>
-  <line x1="50" y1="180" x2="750" y2="180" stroke="url(#accent)" stroke-width="2" class="line"/>
-  <circle cx="400" cy="60" r="4" fill="#dc2626" class="glow"/>
-  <circle cx="400" cy="60" r="8" fill="none" stroke="#dc2626" stroke-width="1" opacity="0.3" class="glow"/>
+  <rect width="100%" height="100%" fill="url(#bg)" rx="14" ry="14"/>
+  <!-- Grid dots -->
+  <g opacity="0.08">
+    <circle cx="100" cy="40" r="1" fill="#f7f7fb"/><circle cx="140" cy="40" r="1" fill="#f7f7fb"/><circle cx="180" cy="40" r="1" fill="#f7f7fb"/><circle cx="220" cy="40" r="1" fill="#f7f7fb"/><circle cx="260" cy="40" r="1" fill="#f7f7fb"/>
+    <circle cx="100" cy="80" r="1" fill="#f7f7fb"/><circle cx="140" cy="80" r="1" fill="#f7f7fb"/><circle cx="180" cy="80" r="1" fill="#f7f7fb"/><circle cx="220" cy="80" r="1" fill="#f7f7fb"/><circle cx="260" cy="80" r="1" fill="#f7f7fb"/>
+    <circle cx="100" cy="120" r="1" fill="#f7f7fb"/><circle cx="140" cy="120" r="1" fill="#f7f7fb"/><circle cx="180" cy="120" r="1" fill="#f7f7fb"/><circle cx="220" cy="120" r="1" fill="#f7f7fb"/><circle cx="260" cy="120" r="1" fill="#f7f7fb"/>
+  </g>
+  <!-- Terminal window -->
+  <rect x="40" y="50" width="340" height="180" rx="8" fill="#0d0d12" stroke="#1e1e2e" stroke-width="1"/>
+  <rect x="40" y="50" width="340" height="24" rx="8" fill="#15151f"/>
+  <rect x="40" y="66" width="340" height="8" fill="#15151f"/>
+  <circle cx="56" cy="62" r="4" fill="#ff5f56"/><circle cx="70" cy="62" r="4" fill="#ffbd2e"/><circle cx="84" cy="62" r="4" fill="#27c93f"/>
+  <!-- Code lines -->
+  <text x="56" y="96" fill="#6b7280" font-family="ui-monospace, monospace" font-size="11" class="line1"><tspan fill="#dc2626">$</tspan> <tspan fill="#a5a5b3">whoami</tspan></text>
+  <text x="56" y="116" fill="#f7f7fb" font-family="ui-monospace, monospace" font-size="11" class="line2">himath@dev <tspan fill="#6b7280">~</tspan></text>
+  <text x="56" y="136" fill="#6b7280" font-family="ui-monospace, monospace" font-size="11" class="line3"><tspan fill="#dc2626">$</tspan> <tspan fill="#a5a5b3">cat /etc/motd</tspan></text>
+  <text x="56" y="156" fill="#dc2626" font-family="ui-monospace, monospace" font-size="11" font-weight="bold" class="line4">Open source. Security. Systems.</text>
+  <text x="56" y="180" fill="#6b7280" font-family="ui-monospace, monospace" font-size="11"><tspan fill="#dc2626">$</tspan> <tspan fill="#a5a5b3">_</tspan><tspan class="cursor" fill="#f7f7fb">|</tspan></text>
+  <!-- Right side decorative -->
+  <g transform="translate(460, 80)">
+    <text x="0" y="0" fill="#1e1e2e" font-family="ui-monospace, monospace" font-size="60" font-weight="900" opacity="0.06">&lt;/&gt;</text>
+    <text x="80" y="100" fill="#1e1e2e" font-family="ui-monospace, monospace" font-size="60" font-weight="900" opacity="0.06">{}</text>
+  </g>
+  <!-- Glowing dot -->
+  <circle cx="660" cy="140" r="40" fill="url(#red)" opacity="0.15" class="dot"/>
+  <circle cx="660" cy="140" r="20" fill="url(#red)" opacity="0.3" class="dot"/>
+  <circle cx="660" cy="140" r="6" fill="#dc2626" class="dot"/>
 </svg>
