@@ -1,8 +1,4 @@
-<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/header.svg" width="100%" alt="Terminal">
-
-<br/>
-
-<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/skills.svg" width="100%" alt="Stack">
+<img src="https://raw.githubusercontent.com/Himath-Rajapaksha/Himath-Rajapaksha/main/skills.svg" width="100%" alt="Terminal">
 
 <br/>
 
