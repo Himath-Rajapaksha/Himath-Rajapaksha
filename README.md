@@ -1,28 +1,50 @@
+<div align="center">
+
 # Himath Rajapaksha
 
-Developer & security researcher building tools that live close to the metal.
+**Application Security Engineer · Full-Stack Developer**
 
-### Tech Stack
+Colombo, Sri Lanka
 
-`Rust` `TypeScript` `Python` `Bash` `C` `eBPF` `GNOME Shell` `Next.js`
+[![Site](https://img.shields.io/badge/himath.work-E85D4A?style=flat-square&logo=googlechrome&logoColor=white)](https://himath.work)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/himath-rajapaksha/)
+[![Email](https://img.shields.io/badge/himath.hr@gmail.com-1A1A1A?style=flat-square&logo=gmail&logoColor=white)](mailto:himath.hr@gmail.com)
 
-### Projects
+</div>
 
-| Project | Description |
-|---------|-------------|
-| [m0d](https://github.com/Himath-Rajapaksha/m0d) | High-performance skeuomorphic music player built in Rust |
-| [sentinel-detection-layer](https://github.com/Himath-Rajapaksha/sentinel-detection-layer) | eBPF-based kernel telemetry for adversarial research |
-| [MacTop](https://github.com/Himath-Rajapaksha/MacTop) | macOS-style global menu for GNOME Shell |
-| [widgy](https://github.com/Himath-Rajapaksha/widgy) | Glassmorphic desktop widgets for GNOME |
-| [tommy](https://github.com/Himath-Rajapaksha/tommy) | GPU-accelerated terminal emulator with WebGPU |
-| [devpad](https://devpad-lyart.vercel.app) | 25+ free privacy-first developer tools (offline PWA) |
-| [shipnotes](https://shipnotes-taupe.vercel.app) | AI changelog generator from Git commits |
-| [whitespace](https://whitespace-ashy.vercel.app) | Minimal reading feed — 95% words, no noise |
+---
 
-### Connect
+I work where application security meets systems code — hardening how an application authenticates, authorizes and handles data, then building the tooling that watches what the kernel actually does underneath.
 
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/anorak_999)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/himath-rajapaksha-b1791235a/)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/anorak_999)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/uvzaFm7d)
-[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/user/anorak_999/)
+Currently reading for a BSc (Hons) in Cyber Security & Digital Forensics at Kingston University. **Open to remote or hybrid application security internships.**
+
+## What I'm working on
+
+- **Application security** — RBAC design, PostgreSQL row-level security, hardened API surfaces, and the unglamorous parts of auth that decide whether a system holds up
+- **Detection engineering** — [sentinel-detection-layer](https://github.com/Himath-Rajapaksha/sentinel-detection-layer): eBPF process and privilege telemetry, resolved into behavioural narratives instead of raw event spam
+- **Systems & desktop** — Rust/Tauri applications, GNOME Shell extensions, and the occasional terminal emulator
+
+## Selected work
+
+| Project | What it is |
+| --- | --- |
+| [sentinel-detection-layer](https://github.com/Himath-Rajapaksha/sentinel-detection-layer) | eBPF (BCC) research prototype for high-fidelity process and privilege telemetry |
+| [m0d](https://github.com/Himath-Rajapaksha/m0d) | Skeuomorphic desktop music player — Rust + Tauri, built for 100k+ track libraries |
+| [MacTop](https://github.com/Himath-Rajapaksha/MacTop) | macOS-style global menu bar and Apple menu for the GNOME Shell top panel |
+| [widgy](https://github.com/Himath-Rajapaksha/widgy) | Glassmorphic desktop widgets for GNOME Shell — clock, calendar, music, weather |
+| [tommy](https://github.com/Himath-Rajapaksha/tommy) | GPU-accelerated terminal emulator in Rust with WebGPU (wgpu) rendering |
+| [Cap](https://extensions.gnome.org/extension/7299/cap/) | GNOME extension that caps daily Wi-Fi usage and cuts the interface at the limit |
+| [bytesmith](https://github.com/Himath-Rajapaksha/bytesmith) | Forensic design audit for AI-built UIs — 36 weighted fingerprints, PDF reports |
+| [Huddl](https://github.com/Himath-Rajapaksha/Huddl) | Telehealth platform with secure video sessions, group therapy and crisis routing |
+
+## Notes and research
+
+- **[appsec-notes](https://github.com/Himath-Rajapaksha/appsec-notes)** — drills, CVE teardowns and lab writeups, kept short and reusable: a header audit that maps controls to bug classes, a Log4Shell teardown that ends in what I'd actually detect.
+
+## Toolbox
+
+`TypeScript` `Rust` `Python` `C#` `JavaScript` `PostgreSQL` `React` `Node.js` `Next.js` `Tauri` `WebRTC` `Redis` `Docker` `Linux` `eBPF` `CI/CD`
+
+## Elsewhere
+
+[himath.work](https://himath.work) — portfolio and project write-ups · [LinkedIn](https://www.linkedin.com/in/himath-rajapaksha/) · [himath.hr@gmail.com](mailto:himath.hr@gmail.com)
