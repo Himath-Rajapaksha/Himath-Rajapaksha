@@ -1,18 +1,6 @@
-<div align="center">
+<img src="header.svg" width="100%" alt="Himath Rajapaksha — Open source. Security. Systems.">
 
 # Himath Rajapaksha
-
-**Application Security Engineer & Full-Stack Developer**
-
-Colombo, Sri Lanka
-
-[![Site](https://img.shields.io/badge/himath.work-E85D4A?style=flat-square&logo=googlechrome&logoColor=white)](https://himath.work)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/himath-rajapaksha/)
-[![Email](https://img.shields.io/badge/himath.hr@gmail.com-1A1A1A?style=flat-square&logo=gmail&logoColor=white)](mailto:himath.hr@gmail.com)
-
-</div>
-
----
 
 I work where application security meets systems code — hardening how an application authenticates, authorizes and handles data, then building the tooling that watches what the kernel actually does underneath.
 
@@ -23,6 +11,10 @@ Currently reading for a BSc (Hons) in Cyber Security & Digital Forensics at King
 - **Application security** — RBAC design, PostgreSQL row-level security, hardened API surfaces, and the unglamorous parts of auth that decide whether a system holds up
 - **Detection engineering** — Sentinel Detection Layer (SADL): eBPF process and privilege telemetry, resolved into behavioural narratives instead of raw event spam
 - **Systems & desktop** — Rust/Tauri applications, GNOME Shell extensions, and the occasional terminal emulator
+
+## Showpiece
+
+<img src="terminal.svg" width="100%" alt="himath@dev terminal — whoami and stack listing">
 
 ## Selected work
 
@@ -48,3 +40,5 @@ Currently reading for a BSc (Hons) in Cyber Security & Digital Forensics at King
 ## Elsewhere
 
 [himath.work](https://himath.work) — portfolio and project write-ups · [LinkedIn](https://www.linkedin.com/in/himath-rajapaksha/) · [himath.hr@gmail.com](mailto:himath.hr@gmail.com)
+
+<img src="footer.svg" width="100%" alt="securing the stack // one commit at a time">
