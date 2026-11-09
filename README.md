@@ -1,4 +1,4 @@
-<img src="header.svg" width="100%" alt="Himath Rajapaksha — Open source. Security. Systems.">
+<img src="header.svg?v=20261109" width="100%" alt="Himath Rajapaksha — Open source. Security. Systems.">
 
 # Himath Rajapaksha
 
@@ -14,7 +14,7 @@ Currently reading for a BSc (Hons) in Cyber Security & Digital Forensics at King
 
 ## Showpiece
 
-<img src="terminal.svg" width="100%" alt="himath@dev terminal — whoami and stack listing">
+<img src="terminal.svg?v=20261109" width="100%" alt="himath@dev terminal — whoami and stack listing">
 
 ## Selected work
 
@@ -41,4 +41,4 @@ Currently reading for a BSc (Hons) in Cyber Security & Digital Forensics at King
 
 [himath.work](https://himath.work) — portfolio and project write-ups · [LinkedIn](https://www.linkedin.com/in/himath-rajapaksha/) · [himath.hr@gmail.com](mailto:himath.hr@gmail.com)
 
-<img src="footer.svg" width="100%" alt="securing the stack // one commit at a time">
+<img src="footer.svg?v=20261109" width="100%" alt="securing the stack // one commit at a time">
